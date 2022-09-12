@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// Schema permet de créer un schéma de données pour la base de données MongoDB
 const saucesSchema = mongoose.Schema({
     userId: {
         type: String,
@@ -42,5 +42,5 @@ const saucesSchema = mongoose.Schema({
         type: [String],
     },
 })
-
+// Model transfome ce modèle en un modèle utilisable
 module.exports = mongoose.model('Sauces', saucesSchema);

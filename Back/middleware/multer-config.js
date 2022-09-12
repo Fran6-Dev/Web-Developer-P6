@@ -1,11 +1,14 @@
+// Package des gestion de fichier entrants
 const multer = require('multer');
 
+// Dictionnaire permettant de gérer les extensions
 const MIME_TYPES = {
     'image/jpg': 'jpg',
     'image/jpeg': 'jpg',
     'image/png': 'png'
 };
 
+// Configure le chemin et noms pour les fichiers entrants
 const storage = multer.diskStorage({
     destination: ( req, file, callback) => {
         callback(null, 'images')

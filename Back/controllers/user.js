@@ -2,6 +2,7 @@
 const bcrypt = require('bcrypt');
 // Permet de créer des tokens d'authentification qui permettent de se connecter une seule fois à leur compte
 const jwt = require('jsonwebtoken');
+// Recupere les schema User
 const User = require('../models/User');
 
 // Création de la requête et réponse correspondant à la création d'un utilisateur
